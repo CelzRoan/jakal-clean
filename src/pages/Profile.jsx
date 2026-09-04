@@ -26,7 +26,7 @@ export default function Profile() {
         <div className="profile-card">
           <img src="https://i.pinimg.com/736x/70/50/c8/7050c8da428a0e539ba49631b11c358c.jpg" alt="Profile" className="profile-avatar" />
           <div>
-            <h2 className="profile-name">Explorer</h2>
+            <h2 className="profile-name">Ai Hoshino</h2>
             <p className="profile-sub">Discovering {city}</p>
           </div>
         </div>

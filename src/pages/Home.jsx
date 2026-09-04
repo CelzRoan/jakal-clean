@@ -36,7 +36,7 @@ export default function Home() {
           <span className="material-symbols-outlined">arrow_drop_down</span>
         </button>
         <button className="home-avatar" onClick={() => navigate("/profile")} aria-label="Profile">
-          <img src="https://picsum.photos/seed/user-avatar/80/80" alt="Profile" />
+          <img src="https://i.pinimg.com/736x/70/50/c8/7050c8da428a0e539ba49631b11c358c.jpg" alt="Profile" />
         </button>
       </header>
 

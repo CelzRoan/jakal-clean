@@ -1,0 +1,93 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-xs) var(--space-container-margin);
+  padding-top: max(var(--space-xs), env(safe-area-inset-top));
+  background: var(--color-surface);
+  flex-shrink: 0;
+}
+
+.topbar__title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.city-select {
+  flex: 1;
+  padding: var(--space-md) var(--space-container-margin) var(--space-xl);
+}
+
+.city-select__current {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-outline-variant);
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.city-select__current:hover {
+  background: var(--color-surface-container-low);
+}
+
+.city-select__current-icon {
+  color: var(--color-primary);
+  font-size: 24px;
+}
+
+.city-select__current-title {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.city-select__current-sub {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--color-on-surface-variant);
+}
+
+.city-select__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-lg);
+}
+
+.city-select__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-md) 4px;
+  border-bottom: 1px solid var(--color-outline-variant);
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-on-background);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.city-select__item:hover {
+  background: var(--color-surface-container-low);
+  color: var(--color-primary);
+}
+
+.city-select__item.is-selected {
+  color: var(--color-primary);
+}
+
+.city-select__item .material-symbols-outlined {
+  color: var(--color-primary);
+}
